@@ -1,4 +1,3 @@
-#include "Board.h"
 #include "Logic.h"
 
 int main() {

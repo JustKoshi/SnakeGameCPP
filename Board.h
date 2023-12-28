@@ -8,7 +8,7 @@ class Board {
 		int height;
 		InOut out;
 	public:
-		Board():out(){ length = 20; height = 20; }
+		Board():out(){ length = 21; height = 20; }
 		void drawBoard(); //draws board
 		InOut& getInput() { return out; }
 		Snake& getSnakeStatus() { return out.getSnake(); }

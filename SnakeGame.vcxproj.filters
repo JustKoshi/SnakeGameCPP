@@ -21,7 +21,7 @@
     <ClCompile Include="Board.h">
       <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="drawBoard.cpp">
+    <ClCompile Include="Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="InputOutput.cpp">

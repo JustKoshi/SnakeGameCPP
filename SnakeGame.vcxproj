@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Board.h" />
-    <ClCompile Include="drawBoard.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="InputOutput.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
