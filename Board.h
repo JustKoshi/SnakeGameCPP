@@ -1,16 +1,18 @@
 #pragma once
 #include <iostream>
 #include "InputOutput.h"
-
+#include "Snake.h"
+#include "Food.h"
 class Board {
 	private:
 		int length;
 		int height;
 		InOut out;
+		Snake snake;
 	public:
 		Board():out(){ length = 21; height = 20; }
-		void drawBoard(); //draws board
+		void drawBoard();
 		InOut& getInput() { return out; }
-		Snake& getSnakeStatus() { return out.getSnake(); }
+		Snake& getSnakeStatus() { return snake; }
 
 };
