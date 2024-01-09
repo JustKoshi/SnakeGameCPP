@@ -5,10 +5,9 @@
 
 class InOut {
 protected:
-	Snake sznejk;
-public:
-	InOut():sznejk(){}
-	void Input();
-	Snake& getSnake() { return sznejk; }
+	char direction;
 
+public:
+	InOut() { direction = 'w'; }
+	void Input(Snake& sznejk);
 };

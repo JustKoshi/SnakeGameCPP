@@ -10,5 +10,5 @@ public:
 	int GetSnakeyPos() { return yPos; }
 	void SetSnakeyPos(int y) { yPos = y; }
 	void SetSnakexPos(int x) { xPos = x; }
-
+	void IncreaseLen() { snakeLen++; }
 };

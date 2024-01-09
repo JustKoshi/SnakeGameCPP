@@ -127,9 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Board.h" />
-    <ClCompile Include="drawBoard.cpp" />
+    <ClCompile Include="Food.cpp" />
     <ClCompile Include="InputOutput.cpp" />
+    <ClCompile Include="Logic.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
