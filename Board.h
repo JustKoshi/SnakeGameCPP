@@ -9,10 +9,12 @@ class Board {
 		int height;
 		InOut out;
 		Snake snake;
+		Food food;
 	public:
-		Board():out(){ length = 21; height = 20; }
+		Board() :out(), snake(), food() { length = 21; height = 20; }
 		void drawBoard();
 		InOut& getInput() { return out; }
 		Snake& getSnakeStatus() { return snake; }
+		Food& getFood() { return food; }
 
 };

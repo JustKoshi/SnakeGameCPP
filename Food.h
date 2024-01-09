@@ -1,16 +1,15 @@
 #pragma once
+#include <random>
 
 class Food {
 private:
-		int x;
-		int y;
+		int food_x;
+		int food_y;
 public:
-        Food();
-		void setX(int x);
-		void setY(int y);
-		int getX();
-		int getY();
-		void generateFood();
+	Food() { food_x = 10; food_y = 10; };
+	int getX() { return food_x; }
+	int getY() { return food_y; }
+	void generateFood();
 		
 
 

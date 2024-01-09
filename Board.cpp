@@ -9,6 +9,9 @@ void Board::drawBoard() {
 			if (j == 0 || j == length - 1) {
 				std::cout << "*";
 			}
+			else if (i == food.getY() && j == food.getX()) {
+				std::cout << "F";
+			}
 			else if (i == snake.GetSnakeyPos() && j == snake.GetSnakexPos()) {
 				std::cout << "O";
 			}
@@ -19,7 +22,6 @@ void Board::drawBoard() {
 		std::cout << '\n';
 	}
 	std::cout << "*********************\n";
-	std::cout << "\n\n\n\n" << snake.GetSnakeyPos() << " " << snake.GetSnakexPos();
 }
 
 

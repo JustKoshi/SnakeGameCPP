@@ -4,15 +4,11 @@
 class Logic {
 protected:
 	bool GameOver;
+	int Score;
 public:
-	Logic() { GameOver = false; }
+	Logic() { GameOver = false; Score = 0; }
 	bool GetGameState() { return GameOver; }
-	void checkIfGO(Board& board) {
-		if (board.getSnakeStatus().GetSnakexPos() <= 0 ||
-			board.getSnakeStatus().GetSnakexPos() >= 20 ||
-			board.getSnakeStatus().GetSnakeyPos() < 0 ||
-			board.getSnakeStatus().GetSnakeyPos() >= 20) {
-			GameOver = true;
-		}
-	}
+	void checkIfGO(Board& board);
+	void AddPoint(Board& board);
+	void DrawPoints();
 };

@@ -10,5 +10,4 @@ protected:
 public:
 	InOut() { direction = 'w'; }
 	void Input(Snake& sznejk);
-
 };
