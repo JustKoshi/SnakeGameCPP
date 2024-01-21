@@ -10,7 +10,5 @@ public:
 	int getX() { return food_x; }
 	int getY() { return food_y; }
 	void generateFood();
-		
-
 
 };
