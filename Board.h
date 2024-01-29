@@ -16,5 +16,5 @@ class Board {
 		InOut& getInput() { return out; }
 		Snake& getSnakeStatus() { return snake; }
 		Food& getFood() { return food; }
-
+		void StartScreen();
 };

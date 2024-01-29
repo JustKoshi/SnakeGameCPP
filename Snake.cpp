@@ -1,6 +1,6 @@
 #include "Snake.h"
 
-void Snake::moveTail() {
+void Snake::moveTail() { //moves the tail
 	for (int i = tail.size()-1; i >0 ; --i) {
 		tail[i] = tail[i - 1];
 	}

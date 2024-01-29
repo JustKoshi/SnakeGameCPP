@@ -1,6 +1,6 @@
 #include "Board.h"
 
-void Board::drawBoard() {
+void Board::drawBoard() { //draws the board
 	system("cls");
 	bool flag = false;
 	std::cout << "#####################\n";
@@ -36,7 +36,23 @@ void Board::drawBoard() {
 		std::cout << '\n';
 	}
 	std::cout << "#####################\n";
-	std::cout << "\n\n" << snake.GetLen();
+	
 }
+
+
+
+void Board::StartScreen() { //draws the start screen
+    std::cout << "#####################\n";
+    for (int i = 0; i < height; i++) {
+        if (i == height / 2) {
+            std::cout << "# move = click WASD #\n";
+        }
+        else {
+            std::cout << "#                   #\n";
+        }
+    }
+    std::cout << "#####################\n";
+}
+
 
 
