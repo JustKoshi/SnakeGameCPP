@@ -27,6 +27,15 @@
     <ClCompile Include="Board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Food.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Logic.h">

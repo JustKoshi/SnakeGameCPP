@@ -2,14 +2,26 @@
 #include <chrono>
 #include <thread>
 int main() {
-	Logic logic;
+
 	Board board;
+	Logic logic;
+
+	board.StartScreen();
+	std::this_thread::sleep_for(std::chrono::seconds(3));
+	system("cls");
 	while (!logic.GetGameState()) {
-		std::this_thread::sleep_for(std::chrono::milliseconds(300));
+		std::this_thread::sleep_for(std::chrono::milliseconds(200));
+		
 		board.getInput().Input(board.getSnakeStatus());
 		logic.AddPoint(board);
-		board.drawBoard();
 		logic.checkIfGO(board);
-		logic.DrawPoints();
+		board.drawBoard();
+		if (board.getSnakeStatus().GetLen() > 0) {
+			board.getSnakeStatus().moveTail();
+		}
+		
+	
+		logic.DrawPoints();	
 	}
+	
 }

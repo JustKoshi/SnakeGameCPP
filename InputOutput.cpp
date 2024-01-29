@@ -1,5 +1,6 @@
 #include "InputOutput.h"
-void InOut::Input(Snake &sznejk) {
+void InOut::Input(Snake &sznejk) { //gets input from user
+	sznejk.SetPrevPos(std::make_pair(sznejk.GetSnakexPos(), sznejk.GetSnakeyPos()));
 	if (_kbhit()) {
 		switch (direction = _getch()) {
 		case 'a':
