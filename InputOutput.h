@@ -3,7 +3,7 @@
 #include <conio.h>
 #include "Snake.h"
 
-class InOut {
+class InOut { //class for input and output
 protected:
 	char direction;
 

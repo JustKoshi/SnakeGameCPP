@@ -1,7 +1,7 @@
 #pragma once
 #include <random>
 
-class Food {
+class Food { //class for the food
 private:
 		int food_x;
 		int food_y;
